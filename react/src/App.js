@@ -1,7 +1,9 @@
+import Movies from "./components/Movies"
+
 const App = () => {
   return (
     <>
-    <h1>Hei</h1>
+      <Movies />
     </>
   );
 };
