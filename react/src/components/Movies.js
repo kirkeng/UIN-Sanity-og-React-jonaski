@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { getMovies } from "../utils/movieService.js";
-//import Movie from './Movie';
+import Movie from './Movie.js';
 
 const Movies = () => {
     const [data, setData] = useState([]);
@@ -13,8 +13,8 @@ const Movies = () => {
     return (
         <>
             <h1>Hei</h1>
-            {data?.length > 0 ? <p>{JSON.stringify(data)}</p> : null}
             <button type="button" onClick={handleClick}>Click</button>
+            <Movie title={data.map(data => (data.title))} actor={data.map(data => (data.actor))} />
         </>
     );
 };

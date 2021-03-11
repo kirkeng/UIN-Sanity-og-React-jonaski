@@ -1,8 +1,9 @@
-const Movie = () => {
+const Movie = ({title, actor}) => {
     return (
-        <>
-        </>
-    )
-}
-
-export default Movie;
+      <>
+      {title?.length > 0 ? <p>Film: {title} \n Medvirkende: {actor}</p> : null}
+      </>
+    );
+  };
+  
+  export default Movie;
