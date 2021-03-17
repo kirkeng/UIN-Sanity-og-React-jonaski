@@ -1,7 +1,7 @@
 const Movie = ({title, actor}) => {
     return (
       <>
-      {title?.length > 0 ? <p>Film: {title} \n Medvirkende: {actor}</p> : null}
+      {title?.length > 0 ? <p>Film: {title} || Medvirkende: {actor}</p> : null}
       </>
     );
   };
