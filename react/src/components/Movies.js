@@ -14,7 +14,7 @@ const Movies = () => {
         <>
             <h1>Film</h1>
             <button type="button" onClick={handleClick}>Click</button>
-            <Movie title={data.map(data => (data.title))} actor={data.map(data => (data.actor))} />
+            {data.map(movie => <Movie title={movie.title} actor={movie.actor} />)}
         </>
     );
 };
